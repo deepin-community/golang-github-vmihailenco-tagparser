@@ -1,0 +1,25 @@
+Source: golang-github-vmihailenco-tagparser
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders:
+ Dmitry Smirnov <onlyjob@debian.org>,
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-golang,
+Build-Depends-Indep:
+ golang-any,
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-vmihailenco-tagparser
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-vmihailenco-tagparser.git
+Homepage: https://github.com/vmihailenco/tagparser
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/vmihailenco/tagparser
+
+Package: golang-github-vmihailenco-tagparser-dev
+Architecture: all
+Depends:
+ ${misc:Depends},
+Description: Golang tag parser
+ Opinionated Golang tag parser.
